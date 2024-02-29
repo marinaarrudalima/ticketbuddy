@@ -7,9 +7,18 @@ class TicketsController < ApplicationController
   end
 
   def new
+    @ticket = Ticket.new
   end
 
   def create
+    @ticket = Ticket.new(tickets_params)
+    @ticket.user = current_user
+    puts @ticket
+    if @ticket.save
+      redirect_to tickets_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def destroy
@@ -18,6 +27,6 @@ class TicketsController < ApplicationController
   private
 
   def tickets_params
-    params.require(tickets).permit(:artist, :ticket_type, :price, :city, :event_date, :user_id)
+    params.require(:ticket).permit(:artist, :ticket_type, :price, :city, :event_date)
   end
 end
