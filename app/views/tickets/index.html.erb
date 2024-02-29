@@ -1,18 +1,29 @@
+<div class="container mt-5">
+  <div class="d-flex justify-content-center">
+    <h1>Tickets:
+      <% @tickets.each do |ticket| %>
+      <%=ticket.artist%>
+    </h1>
+    <div class="artistimage"><img src="beatles.jpeg" alt="beatles" class="rounded-circle position-sticky" style= "width: 80px;"></div>
+  </div>
 
-<h1>Tickets:
-<% @tickets.each do |ticket| %>
-  <%=ticket.artist%>
-</h1>
-<div class="artistimage"><img src="beatles.jpeg" alt="beatles" class="rounded-circle position-sticky" style= "width: 80px;"></div>
-<div>
-<ul>
-  <li><%=ticket.ticket_type%></li>
-  <li><%=ticket.price%></li>
-  <li><%=ticket.city%></li>
-  <li><%=ticket.event_date%></li>
-  </ul>
-    <p>
-      <%= link_to "Details ticket", ticket_path(ticket) %>
-    </p>
+    <div class="event d-flex justify-content-center">
+      <h3>Event:</h3>
+    </div>
+
+    <div class="details_event d-flex justify-content-center text-bg-secondary rounded-pill" style="max-width: 18rem;">
+      <ul>
+        <li><%=ticket.ticket_type%></li>
+        <li><%=ticket.price%></li>
+        <li><%=ticket.city%></li>
+        <li><%=ticket.event_date%></li>
+      </ul>
+    </div>
+
+    <div class="link_ticket d-flex justify-content-center">
+      <p>
+        <%= link_to "Details ticket", ticket_path(ticket) %>
+      </p>
+    </div>
   <% end %>
 </div>
