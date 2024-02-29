@@ -4,6 +4,7 @@ class TicketsController < ApplicationController
   end
 
   def show
+    @ticket = Ticket.find(params[:id])
   end
 
   def new
@@ -17,7 +18,7 @@ class TicketsController < ApplicationController
 
   private
 
-  def tickets_params
-    params.require(tickets).permit(:artist, :ticket_type, :price, :city, :event_date, :user_id)
+  def ticket_params
+    params.require(:tickets).permit(:artist, :ticket_type, :price, :city, :event_date, :user_id)
   end
 end
