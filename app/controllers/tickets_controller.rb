@@ -18,7 +18,7 @@ class TicketsController < ApplicationController
 
   private
 
-  def ticket_params
+  def tickets_params
     params.require(:tickets).permit(:artist, :ticket_type, :price, :city, :event_date, :user_id)
   end
 end
