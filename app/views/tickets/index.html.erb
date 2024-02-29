@@ -1,1 +1,18 @@
-<h1>Artist: </h1>
+
+<h1>Tickets:
+<% @tickets.each do |ticket| %>
+  <%=ticket.artist%>
+</h1>
+<div class="artistimage"><img src="beatles.jpeg" alt="beatles" class="rounded-circle position-sticky" style= "width: 80px;"></div>
+<div>
+<ul>
+  <li><%=ticket.ticket_type%></li>
+  <li><%=ticket.price%></li>
+  <li><%=ticket.city%></li>
+  <li><%=ticket.event_date%></li>
+  </ul>
+    <p>
+      <%= link_to "Details ticket", tickets_path(@ticket) %>
+    </p>
+  <% end %>
+</div>
