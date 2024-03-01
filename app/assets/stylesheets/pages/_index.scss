@@ -4,7 +4,22 @@ ul {
   list-style-type: none;
 }
 
-.container {
+.card-product {
+background-color: #CCC29F;
+outline-style: dashed;
+margin-top: 10px;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
 
-
+.ticket-info {
+  background-color: #C94D3F;
+  font-style: white;
+  font-size: medium;
+  width:200px
+  display flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
