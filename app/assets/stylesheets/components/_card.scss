@@ -37,6 +37,8 @@
 .card-trip {
   overflow: hidden;
   background: white;
+  width: 400px;
+  margin: auto;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -74,11 +76,10 @@
   width: 40px;
 }
 
-.container{
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .container{
+//   background-size: cover;
+//   background-position: center;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
