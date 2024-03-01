@@ -1,14 +1,21 @@
 <p style="color: green"><%= notice %></p>
-
-  <h1> <%= @ticket.artist %> show in <%= @ticket.city %></h1>
-  <h2>Show will be held on <%= @ticket.event_date %></h2>
-  <p>The ticket price is <%= @ticket.price %> for <%= @ticket.ticket_type %></p>
-
-  <%= link_to "Back to your search", tickets_path %>
-  <li class="list-group-item">
-  <% if @ticket.user == current_user %>
-    <%= link_to "Delete", @ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-  <% else %>
-  <p> Yes, this is the ticket I want! <%= link_to "Get it", tickets_path %></p>
-  <% end %>
-  </li>
+<div class="container mt-5">
+<div class="card-trip">
+  <img src="<%= image_path @ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>" />
+  <div class="card-trip-infos mt-5">
+    <div>
+      <h2><%= @ticket.artist %></h2>
+      <p>The show will be held in <%= @ticket.city %></p>
+    </div>
+    <h2 class="card-trip-pricing">$<%= @ticket.price %></h2>
+  </div>
+       <%= link_to "Back to your search", tickets_path %>
+     <li class="list-group-item">
+       <% if @ticket.user == current_user %>
+         <%= link_to "Delete", @ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+       <% else %>
+       <p> Yes, this is the ticket I want! <%= link_to "Get it", tickets_path %></p>
+       <% end %>
+    </li>
+</div>
+</div>
