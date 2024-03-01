@@ -4,7 +4,7 @@
       <% @tickets.each do |ticket| %>
       <%=ticket.artist%>
     </h1>
-    <div class="artistimage"><img src="beatles.jpeg" alt="beatles" class="rounded-circle position-sticky" style= "width: 80px;"></div>
+    <img src="('<%=ticket.image_url%>')"></div>
   </div>
 
     <div class="event d-flex justify-content-center">
