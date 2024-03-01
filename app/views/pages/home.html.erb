@@ -8,17 +8,16 @@
 <div class="container justify-content-center">
   <h3 class="header mt-5"><strong>Trending now</strong></h3>
 
+
   <div class="cards mt-3 justify-content-center">
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'nxzero.jpg' %>)">
-      NxZero
-    </div>
+    <% @tickets.each do |ticket| %>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'postmalone.jpg' %>)">
-     Post Malone
-    </div>
+      <%= link_to ticket_path(ticket) do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>)">
+          <%= ticket.artist %>
+        </div>
+      <% end %>
+    <% end %>
 
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'imaginedragons.jpg' %>)">
-      Imagine Dragons
-    </div>
   </div>
 </div>
