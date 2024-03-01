@@ -1,22 +1,22 @@
-<div class="container mt-5 align-text-center">
-  <div class="d-flex justify-content-center">
-      <h1>Event:</h1>
-      <p>Artist: <% @tickets.each do |ticket| %>
-      <%=ticket.artist%></p>
+  <div class="container">
+    <div class="card-title">
+      <h1>Event</h1>
+      <h2>Artist: <% @tickets.each do |ticket| %>
+      <%=ticket.artist%></h2>
+        <img class=beatles src="/beatles.jpeg" class="card-trip-user avatar-bordered" />
     </div>
-
-<div class="card-product">
-  <div class="card-product-infos">
-
-    <p><ul>
-        <li><%=ticket.ticket_type%></li>
+    <div class="card-ticket">
+        <p><ul>
         <li><%=ticket.price%></li>
         <li><%=ticket.city%></li>
         <li><%=ticket.event_date%></li>
+          <div class="type">
+        <li><%=ticket.ticket_type%></li>
+            </div>
+        <div class="buy">
         <p><%= link_to "Buy ticket", ticket_path(ticket) %></p>
+        </div>
+        <% end %>
       </ul></p>
-  </div>
-</div>
-    <% end %>
     </div>
-</div>
+  </div>
