@@ -6,12 +6,12 @@
         <img class=beatles src="/beatles.jpeg" class="card-trip-user avatar-bordered" />
     </div>
     <div class="card-ticket">
-        <p><ul>
-        <li><%=ticket.price%></li>
-        <li><%=ticket.city%></li>
-        <li><%=ticket.event_date%></li>
+        <p><ul style="margin: 0px; padding: 0px">
+        <li><strong>Preço:</strong> <%=ticket.price%></li>
+        <li><strong>Local:</strong> <%=ticket.city%></li>
+        <li><strong>Data:</strong> <%=ticket.event_date%></li>
           <div class="type">
-        <li><%=ticket.ticket_type%></li>
+        <li><strong>Tipo:</strong> <%=ticket.ticket_type%></li>
             </div>
         <div class="buy">
         <p><%= link_to "Buy ticket", ticket_path(ticket) %></p>
