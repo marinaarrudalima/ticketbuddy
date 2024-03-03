@@ -1,0 +1,486 @@
+[33mcommit 9c2fb5472400cfd6f17eee9dbafad73ec7efa3bf[m[33m ([m[1;36mHEAD -> [m[1;32mshow_layout[m[33m, [m[1;31morigin/show_layout[m[33m)[m
+Merge: 477228d bc1938c
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Sun Mar 3 09:37:36 2024 -0300
+
+    Retirando o .container comentado que estava no meu _card.scss local
+
+[33mcommit 477228d6c8706e6259b19736ec5693cf030a32a0[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Fri Mar 1 17:02:34 2024 -0300
+
+    Bom, não sei. Tinha atualizado o Show
+
+[33mcommit a194b072b04421b1e01364644ee57d08ca2a6940[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Fri Mar 1 16:49:15 2024 -0300
+
+    mais mudanças no layout da Show
+
+[33mcommit bc1938cc2a3482b219c3543563965da0fcef52c9[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 3531a1d 03ff99b
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 19:47:18 2024 +0000
+
+    Merge pull request #25 from marinaarrudalima/images_on_home
+    
+    Images on home
+
+[33mcommit 03ff99b54252b160d3e872e4fb7b4058ad980863[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 19:46:42 2024 +0000
+
+    fixed bug
+
+[33mcommit 47f8b0b3206927a326a24418273da616caa9522f[m
+Merge: e4c8471 2b8469b
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 19:40:10 2024 +0000
+
+    conflicts fixed
+
+[33mcommit 2b8469bc354e994fbfc79fd66e7dd3c2bbc4475f[m
+Merge: a03ff21 3531a1d
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 19:38:54 2024 +0000
+
+    Merge branch 'master' of github.com:marinaarrudalima/ticketbuddy
+
+[33mcommit e4c84714dcf72afcb7e55fd4be816c88784f85f5[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 19:38:04 2024 +0000
+
+    cards images
+
+[33mcommit 3531a1db61767bcb3f1173900669a77067ef103b[m
+Merge: 76f400c 5f0a6e4
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 16:16:18 2024 -0300
+
+    Merge pull request #23 from marinaarrudalima/show_layout
+    
+    Mexi no layout da show - menos mal
+
+[33mcommit a03ff21007a7d00ebc61c01cfe7ec2c3f69d7acd[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 19:08:39 2024 +0000
+
+    add images to cards when we put the name of the artist
+
+[33mcommit 5f0a6e49b287b38614f8e52aabb024cf82d53621[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Fri Mar 1 16:07:22 2024 -0300
+
+    Mexi no layout da show - menos mal
+
+[33mcommit 76f400c7f841058563d2d92f44e51baf7b9501ec[m
+Merge: c71ba45 4682d11
+Author: marinaarrudalima <154925518+marinaarrudalima@users.noreply.github.com>
+Date:   Fri Mar 1 16:05:35 2024 -0300
+
+    Merge pull request #22 from marinaarrudalima/dessa-vez-vai
+    
+    versao mais recente do index
+
+[33mcommit 4682d1188ac3daed0afdc7ec363001274b72910a[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Fri Mar 1 16:04:18 2024 -0300
+
+    versao mais recente do index
+
+[33mcommit c71ba45d41e968e499ce6f9dc769fb3f638090ed[m
+Merge: 894269a 86a61c9
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 15:44:16 2024 -0300
+
+    Merge pull request #21 from marinaarrudalima/new-title
+    
+    adicionei um titulozinho pro /tickets/new
+
+[33mcommit 86a61c9cd60d4f7f1667d1259781705b26d8e053[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 15:43:09 2024 -0300
+
+    adicionei um titulozinho pro /tickets/new
+
+[33mcommit 894269a47510f49d0b7d327d287965aa4646e8b6[m
+Merge: 1e8e6eb d644893
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 18:12:41 2024 +0000
+
+    Merge pull request #20 from marinaarrudalima/home-melhorado
+    
+    added image background
+
+[33mcommit 1e8e6ebb16a55c897b25b395940307230b39824a[m
+Merge: 478999f a9368a1
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 15:10:18 2024 -0300
+
+    Merge pull request #19 from marinaarrudalima/navbar-links
+    
+    mudei os links e logo na navbar
+
+[33mcommit a9368a1bd75addb5a08872bdeefe9fc5d1638f75[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 15:07:40 2024 -0300
+
+    mudei os links e logo na navbar
+
+[33mcommit d644893b4722f296d93cc1ed49c467af83fd0804[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 18:07:17 2024 +0000
+
+    added image background
+
+[33mcommit 478999fd79da45d71102ffd60bc00985e218ea52[m
+Merge: 565f146 0ce93fc
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 17:38:17 2024 +0000
+
+    Merge pull request #17 from marinaarrudalima/new-back
+    
+    formulario do tickets/new com form for
+
+[33mcommit 565f146fc11d2e06f292f1de77fc881e19993495[m
+Merge: d82ecde 949a0e4
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 17:37:59 2024 +0000
+
+    Merge pull request #18 from marinaarrudalima/home-melhorado
+    
+    home with pics
+
+[33mcommit 949a0e401ae73c30ae9081ab9fa0b878b632e2a9[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 17:34:38 2024 +0000
+
+    home with pics
+
+[33mcommit 0ce93fc445a97b21bc4478396716aafcde2b69c4[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 14:33:08 2024 -0300
+
+    formulario do tickets/new com form for
+
+[33mcommit d82ecded7d5f1a07d148683d3384f8976b483be1[m
+Merge: 284b68b 46046c1
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 13:57:26 2024 -0300
+
+    Merge pull request #16 from marinaarrudalima/home-melhorado
+    
+    home com grades
+
+[33mcommit 284b68b753217e0e4b27a74ad1f9cf00d946e978[m
+Merge: b68415d 6b23fe2
+Author: marinaarrudalima <154925518+marinaarrudalima@users.noreply.github.com>
+Date:   Fri Mar 1 13:56:38 2024 -0300
+
+    Merge pull request #15 from marinaarrudalima/dessa-vez-vai
+    
+    Dessa vez vai
+
+[33mcommit 6b23fe279a2be6ac24a058812df4688e3e1eed14[m
+Merge: 111b86a b68415d
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Fri Mar 1 13:56:03 2024 -0300
+
+    index changes
+
+[33mcommit 46046c12858f11c28af97f1adc5a2d2f6de2017d[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 16:55:37 2024 +0000
+
+    home com grades
+
+[33mcommit 111b86ac5d60cf3f55bcc84484be9fcc1670fdc9[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Fri Mar 1 13:49:33 2024 -0300
+
+    Changes to the index
+
+[33mcommit b68415d2add758ce78dd4cf8340b6ccce9e64632[m
+Merge: 9b8d155 6ca40f1
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 16:21:05 2024 +0000
+
+    Merge pull request #13 from marinaarrudalima/new-front
+    
+    adicionei if statement no show
+
+[33mcommit 9b8d1555bdce841a9b99aa997b848feb1126fd5e[m
+Merge: 7f96a06 a60159e
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 16:20:45 2024 +0000
+
+    Merge pull request #14 from marinaarrudalima/tickets_controller_index2
+    
+    Tickets controller index2
+
+[33mcommit a60159ed14d581c432a5509315cd508bc5f247a5[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 16:17:54 2024 +0000
+
+    home input and banner
+
+[33mcommit 6ca40f1313cd431762089087a25fd3c985e31d46[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 13:13:27 2024 -0300
+
+    adicionei if statement no show
+
+[33mcommit da09df399638e4b58b653c35e0036011451f22f3[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Fri Mar 1 12:57:37 2024 -0300
+
+    trabalhando nas imagens
+
+[33mcommit d7e2448bd554ae11f08b07467acc8e0686eb3b84[m
+Merge: 6422a7a 7f96a06
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 15:56:14 2024 +0000
+
+    Merge branch 'master' into tickets_controller_index2
+
+[33mcommit 6422a7a1bafdec181666c7f1c2e2c49df515673f[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Fri Mar 1 15:55:10 2024 +0000
+
+    home input and navbar
+
+[33mcommit 7f96a067c6b627c1b5f67779b4c1d6630e703c1e[m
+Merge: 287bc2a a0c3910
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Fri Mar 1 14:27:45 2024 +0000
+
+    Merge pull request #12 from marinaarrudalima/tickets-controller-destroy
+    
+    adicionei o metodo destroy no ticketscontroller
+
+[33mcommit a0c39104658d8dcf72caf5e401bed17262539c7a[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 11:22:32 2024 -0300
+
+    adicionei o metodo destroy no ticketscontroller
+
+[33mcommit 287bc2ab9c90cb22bf5e9dc46e16ec3731f1af0d[m
+Merge: ccd10c7 2af49bb
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Fri Mar 1 10:27:07 2024 -0300
+
+    Merge pull request #11 from marinaarrudalima/show_layout
+    
+    Added link to go back to tickets index and a temporary button to buy it
+
+[33mcommit 2af49bb9588f24944ec24180cc9d3bd2330db806[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Fri Mar 1 09:59:05 2024 -0300
+
+    Added link to go back to tickets index and a temporary button to buy it
+
+[33mcommit ccd10c7da05c219ef992bde31c3063dfb109f017[m
+Merge: 13df4eb 968e73d
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Thu Feb 29 21:21:04 2024 +0000
+
+    Merge pull request #10 from marinaarrudalima/tickets_controller_index2
+    
+    Tickets controller index2
+
+[33mcommit 968e73dd58573194a1805c0c31941de1437b6ac9[m
+Merge: 6da56b2 1bc330a
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Thu Feb 29 21:19:19 2024 +0000
+
+    solved conflicts
+
+[33mcommit 6da56b29f7c2753e153dcf708638d2525cb6e8ef[m
+Merge: ce8dab5 13df4eb
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Thu Feb 29 21:17:04 2024 +0000
+
+    Merge branch 'master' into tickets_controller_index2
+
+[33mcommit 1bc330a94d31013d34cad6bce46568104d735fca[m
+Merge: ce8dab5 13df4eb
+Author: Bê Aranha <145395319+bearanha@users.noreply.github.com>
+Date:   Thu Feb 29 18:12:43 2024 -0300
+
+    Merge branch 'master' into tickets_controller_index2
+
+[33mcommit ce8dab584f22e1b939ee3f10c6dbe52ea7b593e9[m
+Author: Beatriz Assis <biaeassis1@gmail.com>
+Date:   Thu Feb 29 21:09:37 2024 +0000
+
+    index view layout
+
+[33mcommit 13df4eb23365f3ec99e490b97ed12e255a9abf4b[m
+Merge: db04c81 b5dfdca
+Author: marinaarrudalima <154925518+marinaarrudalima@users.noreply.github.com>
+Date:   Thu Feb 29 18:07:59 2024 -0300
+
+    Merge pull request #8 from marinaarrudalima/dessa-vez-vai
+    
+    Added seeds
+
+[33mcommit b5dfdcaa09987f65dca2355e7b28c7d0d8a2d0cd[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 18:05:57 2024 -0300
+
+    Added seeds
+
+[33mcommit db04c81fa4d05466c74c4ef0709e51a0887984dd[m
+Merge: 5f6e787 5234c91
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Thu Feb 29 16:51:27 2024 -0300
+
+    Merge pull request #7 from marinaarrudalima/tickets_controller_show
+    
+    Show Ticket def and view created - without front-end
+
+[33mcommit 5f6e78779476c9479c29f05ca5aabe21e3bc000d[m
+Merge: 30b8be8 9cd5b16
+Author: Bê Aranha <145395319+bearanha@users.noreply.github.com>
+Date:   Thu Feb 29 16:51:16 2024 -0300
+
+    Merge pull request #5 from marinaarrudalima/tickets_controller_create
+    
+    create and new actions/view
+
+[33mcommit 9cd5b161c2c5f1e983af048687e157861c96c853[m
+Merge: 719f123 30b8be8
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Thu Feb 29 16:50:04 2024 -0300
+
+    Merge branch 'master' into tickets_controller_create
+
+[33mcommit 5234c91bd35659c1c8d55bade43f83e316ee121a[m
+Merge: 94f4142 30b8be8
+Author: Bê Aranha <145395319+bearanha@users.noreply.github.com>
+Date:   Thu Feb 29 16:49:58 2024 -0300
+
+    Merge branch 'master' into tickets_controller_show
+
+[33mcommit 30b8be87f4fd31820a6dcd72f1d9d39fc3610fe4[m
+Merge: f33d9e3 de7efbe
+Author: marinaarrudalima <154925518+marinaarrudalima@users.noreply.github.com>
+Date:   Thu Feb 29 16:47:27 2024 -0300
+
+    Merge pull request #6 from marinaarrudalima/dessa-vez-vai
+    
+    Dessa vez vai
+
+[33mcommit 719f12315b66f42099fe0afe4a8ef8cf96ecee3a[m
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Thu Feb 29 16:45:01 2024 -0300
+
+    create and new actions/view
+
+[33mcommit 94f4142a4f41b9455f077f50d6648868a7729139[m[33m ([m[1;31morigin/tickets_controller_show[m[33m, [m[1;32mtickets_controller_show[m[33m)[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Thu Feb 29 16:43:51 2024 -0300
+
+    Show Ticket def and view created - without front-end
+
+[33mcommit de7efbe1122f210629d72e56cfe2ca4e3e2a276d[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 16:41:16 2024 -0300
+
+    Index view
+
+[33mcommit 412b5d37c8e128a06b9dc57a3e027f9ef221f671[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 16:19:33 2024 -0300
+
+    Changes to index controller
+
+[33mcommit f33d9e309949a976fa88aa9f041ae29a3c828762[m
+Merge: 4121395 82a12f4
+Author: marinaarrudalima <154925518+marinaarrudalima@users.noreply.github.com>
+Date:   Thu Feb 29 15:10:39 2024 -0300
+
+    Merge pull request #4 from marinaarrudalima/tickets_controller_index
+    
+    Added tickets folder to views
+
+[33mcommit 82a12f453afe9967206638f8d9cba75deb89a056[m[33m ([m[1;31morigin/tickets_controller_index[m[33m)[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 15:05:42 2024 -0300
+
+    Added tickets folder to views
+
+[33mcommit 4121395154a4de99bd8f1a945121f905922a9afe[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 14:45:27 2024 -0300
+
+    added correct tickets views folder
+
+[33mcommit a07941be549195574aff13101e45ebfadc0b990f[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 14:42:55 2024 -0300
+
+    added ticket views folder
+
+[33mcommit 8125a729731c24e78eb399220cb6eb6f70988a50[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 14:26:28 2024 -0300
+
+    ticket routes added
+
+[33mcommit 995542fa0c3194554ed1cc5a0f30e9e2ca0740f8[m
+Merge: 8f41a54 b36210e
+Author: Beatriz Assis <156239582+beatrizeassis@users.noreply.github.com>
+Date:   Thu Feb 29 17:00:44 2024 +0000
+
+    Merge pull request #3 from marinaarrudalima/tickets_controller
+    
+    Controller Tickets created
+
+[33mcommit b36210eef30e686070a50a66e3727439c7bb0ea5[m[33m ([m[1;31morigin/tickets_controller[m[33m)[m
+Author: Beatriz Aranha <be.aranha@gmail.com>
+Date:   Thu Feb 29 13:57:57 2024 -0300
+
+    Controller Tickets createe
+
+[33mcommit 8f41a546180ccef1acf04617ee3235e75218d475[m
+Merge: 2a41067 8815510
+Author: Carolina Leone <carol.leone@hotmail.com>
+Date:   Thu Feb 29 12:31:11 2024 -0300
+
+    Merge pull request #2 from marinaarrudalima/create_user_columns
+    
+    User columns added
+
+[33mcommit 8815510f926fbf7b63517935ab684f044c7e6e6b[m[33m ([m[1;31morigin/create_user_columns[m[33m)[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 12:24:34 2024 -0300
+
+    User columns added
+
+[33mcommit 2a41067783a19586c37b88f0002ea63deb9b2af2[m
+Merge: 5f921c7 901ff68
+Author: Bê Aranha <145395319+bearanha@users.noreply.github.com>
+Date:   Thu Feb 29 11:49:07 2024 -0300
+
+    Merge pull request #1 from marinaarrudalima/modelticket
+    
+    User and ticket created
+
+[33mcommit 901ff68f1e632c1a6bc262b49927efcc422917a4[m[33m ([m[1;31morigin/modelticket[m[33m, [m[1;32mmodelticket[m[33m)[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 11:43:01 2024 -0300
+
+    User and ticket created
+
+[33mcommit 5f921c73c0241aa643333fa704cc89c6c582d158[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 11:26:29 2024 -0300
+
+    Devise configured
+
+[33mcommit cabab811a18386617fa105590498747947d5f891[m
+Author: Marina Lima <marinaarrudalima@gmail.com>
+Date:   Thu Feb 29 11:08:45 2024 -0300
+
+    Initial commit with minimal template from https://github.com/lewagon/rails-templates
