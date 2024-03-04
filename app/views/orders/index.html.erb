@@ -1,6 +1,7 @@
-<h1>My <b>Orders</b>:</h1>
-
+<h1><b>Purchase History</b>:</h1>
+<div class=row>
   <% @orders.each do |order| %>
+  <div class="col-4">
     <div class="card-trip">
       <img src="<%= image_path order.ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>"/>
       <div class="card-trip-infos">
@@ -9,8 +10,10 @@
           <p>The show will be held in <b><%= order.ticket.city %></b></p>
         </div>
         <h2 class="card-trip-pricing">$<%= order.ticket.price %></h2>
-        <%= link_to "Delete", order.ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        <%= link_to "Delete", order, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         <br>
       </div>
     </div>
+    </div>
   <% end %>
+</div>

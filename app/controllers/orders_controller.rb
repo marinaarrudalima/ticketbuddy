@@ -1,4 +1,6 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @orders = Order.where(user: current_user)
   end
@@ -15,11 +17,14 @@ class OrdersController < ApplicationController
     else
       render "tickets/show"
     end
+
   end
 
-  def destroy
-    @order = Order.find(params[:id])
-    @order.destroy
-    redirect_to orders_path
-  end
+  # def destroy
+  #   @order = Order.find(params[:id])
+  #   # @ticket = @order.ticket
+  #   # @ticket.pending!
+  #   @order.destroy
+  #   redirect_to orders_path
+  # end
 end
