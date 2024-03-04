@@ -1,5 +1,9 @@
 class TicketsController < ApplicationController
 
+  def my
+    @tickets = Ticket.where(user: current_user)
+  end
+
   def show
     @ticket = Ticket.find(params[:id])
   end
@@ -22,6 +26,20 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
     @ticket.destroy
     redirect_to tickets_path(@ticket.user), status: :see_other
+  end
+
+  def edit
+    @ticket = Ticket.find(params[:id])
+  end
+
+  def update
+    @ticket = Ticket.find(params[:id])
+    @ticket.user = current_user
+    if @ticket.update(tickets_params)
+      redirect_to tickets_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private

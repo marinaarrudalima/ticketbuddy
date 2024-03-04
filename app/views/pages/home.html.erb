@@ -15,18 +15,27 @@
 </div>
 
 <div class="container justify-content-center">
-  <h3 class="header mt-5"><strong>Trending now</strong></h3>
+  <h3 class="header mt-5"><strong>Tickets Available:</strong></h3>
 
 
-  <div class="cards mt-3 justify-content-center">
-    <% @tickets.each do |ticket| %>
+  <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/arctic-monkeys-e1661342211280.jpg?w=1200&h=675&crop=1)">
+    15/03-Arctic Monkeys
+  </div>
 
-      <%= link_to ticket_path(ticket) do %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>)">
-          <%= ticket.artist %>
-        </div>
-      <% end %>
-    <% end %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lastfm.freetls.fastly.net/i/u/ar0/9c02bbe02456376e7b1d6b5f03e4f440.jpg)">
+    20/03-Pink Floyd
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://veja.abril.com.br/wp-content/uploads/2016/06/beatles-abbey-road-620-original2.jpeg?w=1200&h=900)">
+    01/04-Beatles
+  </div>
+</div>
+
+
+
+
+
 
   </div>
 </div>
