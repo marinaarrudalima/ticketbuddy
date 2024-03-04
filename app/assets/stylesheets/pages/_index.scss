@@ -1,25 +1,65 @@
-// Import page-specific CSS files here.
 @import "home";
 ul {
   list-style-type: none;
 }
 
-.card-product {
-background-color: #CCC29F;
-outline-style: dashed;
-margin-top: 10px;
-display: flex;
+.container {
 align-items: center;
+display: flex;
 flex-direction: column;
-justify-content: center;
+margin-top: 10px;
+}
+.card-title {
+  background-color: #CCC29F;
+  outline-style: dashed;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  color: #C94D3F;
+}
+.card-ticket {
+  background-color: #C94D3F;
+  width: 30%;
+  display: flex;
+  color: white;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  margin: 10px
 }
 
-.ticket-info {
-  background-color: #C94D3F;
-  font-style: white;
-  font-size: medium;
-  width:200px
-  display flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.buybutton,
+.buybutton a {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 17px;
+    font-weight:lighter;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #CCC29F;
+    border:#CCC29F;
+}
+
+.artist {
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+}
+
+.price {
+display: flex;
+justify-content: right;
+font-size: 25px;
+}
+
+.artistprice {
+display: flex;
+align-content: top;
+justify-content: space-between;
 }

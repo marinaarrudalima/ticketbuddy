@@ -1,13 +1,19 @@
-<%= form_with model: @ticket do |f| %>
-  <%= f.label :artist  %>
-  <%= f.text_field :artist %>
-  <%= f.label :ticket_type  %>
-  <%= f.text_field :ticket_type %>
-  <%= f.label :price  %>
-  <%= f.number_field :price %>
-  <%= f.label :city  %>
-  <%= f.text_field :city %>
-  <%= f.label :event_date  %>
-  <%= f.date_field   :event_date %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h4><br>
+        Sell your ticket safely with TicketBuddy! 🎟️</h4>
+      <br>
+      <div class=sellform>
+      <%= simple_form_for @ticket do |f| %>
+        <%= f.input :artist %>
+        <%= f.input :ticket_type %>
+        <%= f.input :price %>
+        <%= f.input :city %>
+        <%= f.input :event_date %>
+        <%= f.submit "Upload your ticket here", class: "btn btn-secondary"%>
+        <%= f.submit "Submit", class: "btn btn-primary"%>
+      <% end %>
+    </div>
+  </div>
+</div>

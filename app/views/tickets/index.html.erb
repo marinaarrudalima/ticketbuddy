@@ -1,18 +1,17 @@
-<div class="container mt-5 align-text-center">
-  <div class="card-product" style= "height:300px;">
-      <h2>Event</h2>
-      <h3>Artist: <% @tickets.each do |ticket| %>
-      <%=ticket.artist%></h3>
+<div class="container">
+  <div class="card-title">
+    <h1>Tickets for Sale</h1>
+    <h2><% @tickets.each do |ticket| %>
+      </div>
+      <div class="card-ticket">
+        <ul style="margin: 0px; padding: 0px">
+          <div class="artistprice"><li class="artist"><%=ticket.artist%></li>
+          <li class="price">$<%=ticket.price%></li></div>
+          <li class="date"><%=ticket.event_date%></li>
+          <li class="place"><%=ticket.city%></li>
+          <li class="ticket-type">Ticket type: <%=ticket.ticket_type%></li>
+            <button class="buybutton"><%= link_to "Buy ticket", ticket_path(ticket) %></button>
+          </ul>
+        <% end %>
+      </div>
     </div>
-  </div>
-<div class="ticket-info">
-    <p><ul>
-        <li><%=ticket.ticket_type%></li>
-        <li><%=ticket.price%></li>
-        <li><%=ticket.city%></li>
-        <li><%=ticket.event_date%></li>
-        <p><%= link_to "Buy ticket", ticket_path(ticket) %></p>
-      </ul></p>
-  </div>
-</div>
-    <% end %>
