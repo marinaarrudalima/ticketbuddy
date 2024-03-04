@@ -11,7 +11,9 @@
   </div>
        <%= link_to "Back to your search", tickets_path %>
      <li class="list-group-item">
-      <%= link_to "Get this Ticket", ticket_orders_path %></p>
+      <%= form_with url: ticket_orders_path(@ticket), method: :post do |form| %>
+        <%= form.submit "Buy Ticket", class: "btn btn-primary" %>
+      <% end %>
     </li>
 </div>
 </div>

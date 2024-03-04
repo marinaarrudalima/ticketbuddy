@@ -1,9 +1,5 @@
 class TicketsController < ApplicationController
   def index
-    @tickets = Ticket.all
-  end
-
-  def my
     @tickets = Ticket.where(user: current_user)
   end
 

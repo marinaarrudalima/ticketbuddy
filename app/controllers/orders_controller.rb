@@ -1,4 +1,8 @@
 class OrdersController < ApplicationController
+  def index
+    @orders = Order.where(user: current_user)
+  end
+
   def create
     @ticket = Ticket.find(params[:ticket_id])
     @order = Order.new
