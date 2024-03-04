@@ -3,6 +3,10 @@ class TicketsController < ApplicationController
     @tickets = Ticket.all
   end
 
+  def my
+    @tickets = Ticket.where(user: current_user)
+  end
+
   def show
     @ticket = Ticket.find(params[:id])
   end
