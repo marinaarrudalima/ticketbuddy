@@ -1,6 +1,5 @@
 class TicketsController < ApplicationController
-
-  def my
+  def index
     @tickets = Ticket.where(user: current_user)
   end
 
@@ -36,7 +35,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.find(params[:id])
     @ticket.user = current_user
     if @ticket.update(tickets_params)
-      redirect_to tickets_path
+      redirect_to my_tickets_path
     else
       render :new, status: :unprocessable_entity
     end

@@ -32,6 +32,8 @@ gem 'htmlbeautifier', '~> 1.3', '>= 1.3.1'
 
 gem "pg_search"
 
+gem "cloudinary"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -73,10 +75,12 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem "dotenv-rails"
 end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "dotenv-rails"
 end

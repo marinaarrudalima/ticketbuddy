@@ -1,17 +1,17 @@
-<div class="container">
-  <div class="card-title">
-    <h1>Tickets for Sale</h1>
-    <h2><% @tickets.each do |ticket| %>
-      </div>
-      <div class="card-ticket">
-        <ul style="margin: 0px; padding: 0px">
-          <div class="artistprice"><li class="artist"><%=ticket.artist%></li>
-          <li class="price">$<%=ticket.price%></li></div>
-          <li class="date"><%=ticket.event_date%></li>
-          <li class="place"><%=ticket.city%></li>
-          <li class="ticket-type">Ticket type: <%=ticket.ticket_type%></li>
-            <button class="buybutton"><%= link_to "Buy ticket", ticket_path(ticket) %></button>
-          </ul>
-        <% end %>
+<h1>My <b>Selling</b> Tickets</h1>
+
+  <% @tickets.each do |ticket| %>
+    <div class="card-trip">
+      <img src="<%= image_path ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>"/>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= ticket.artist %></h2>
+          <p>The show will be held in <b><%= ticket.city %></b></p>
+        </div>
+        <h2 class="card-trip-pricing">$<%= ticket.price %></h2>
+        <%= link_to "Delete", ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        <br>
+        <%= link_to "Edit", edit_ticket_path(ticket) %>
       </div>
     </div>
+  <% end %>

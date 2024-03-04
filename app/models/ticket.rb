@@ -9,4 +9,8 @@ class Ticket < ApplicationRecord
     using: {
       tsearch: { prefix: true }
     }
+  enum status: {
+    pending: 0,
+    sold: 1
+  }
 end
