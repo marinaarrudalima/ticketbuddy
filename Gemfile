@@ -28,6 +28,10 @@ gem "jbuilder"
 
 gem "devise"
 
+gem 'htmlbeautifier', '~> 1.3', '>= 1.3.1'
+
+gem "pg_search"
+
 gem "cloudinary"
 
 # Use Redis adapter to run Action Cable in production

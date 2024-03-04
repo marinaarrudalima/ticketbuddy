@@ -15,7 +15,7 @@ class TicketsController < ApplicationController
     @ticket = Ticket.new(tickets_params)
     @ticket.user = current_user
     if @ticket.save
-      redirect_to tickets_path
+      redirect_to ticket_path(@ticket)
     else
       render :new, status: :unprocessable_entity
     end

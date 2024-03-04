@@ -15,3 +15,11 @@
 .form {
   border-radius: 5px;
 }
+.custom-width {
+  width: 900px;
+}
+
+.submitbutton {
+  display: flex;
+  flex-direction: column;
+}
