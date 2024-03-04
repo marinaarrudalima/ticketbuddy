@@ -11,13 +11,7 @@
   </div>
        <%= link_to "Back to your search", tickets_path %>
      <li class="list-group-item">
-       <% if @ticket.user == current_user %>
-         <%= link_to "Delete", @ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-         <br>
-         <%= link_to "Edit", edit_ticket_path %>
-       <% else %>
-       <p> Yes, this is the ticket I want! <%= link_to "Get it", tickets_path %></p>
-       <% end %>
+      <%= link_to "Get this Ticket", ticket_orders_path %></p>
     </li>
 </div>
 </div>

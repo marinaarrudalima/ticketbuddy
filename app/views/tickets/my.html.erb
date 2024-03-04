@@ -1,0 +1,19 @@
+<h1>My Tickets</h1>
+
+<h3>Selling Tickets:</h3>
+  <% @tickets.each do |ticket| %>
+    <div class="card-trip">
+  <img src="<%= image_path ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>" />
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= ticket.artist %></h2>
+      <p>The show will be held in <b><%= ticket.city %></b></p>
+    </div>
+    <h2 class="card-trip-pricing">$<%= ticket.price %></h2>
+    <%= link_to "Delete", ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+      <br>
+    <%= link_to "Edit", edit_ticket_path(ticket) %>
+  </div>
+  <% end %>
+
+<h3>Tickets Orders:</h3>
