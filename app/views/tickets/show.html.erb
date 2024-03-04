@@ -1,11 +1,11 @@
 <p style="color: green"><%= notice %></p>
-<div class="container mt-5">
+<div class="container">
 <div class="card-trip">
   <img src="<%= image_path @ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>" />
-  <div class="card-trip-infos mt-5">
+  <div class="card-trip-infos">
     <div>
       <h2><%= @ticket.artist %></h2>
-      <p>The show will be held in <%= @ticket.city %></p>
+      <p>The show will be held in <b><%= @ticket.city %></b></p>
     </div>
     <h2 class="card-trip-pricing">$<%= @ticket.price %></h2>
   </div>
