@@ -21,12 +21,17 @@
       <% @tickets.each do |ticket| %>
         <%= link_to ticket_path(ticket), class: "navbar-brand" do %>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/08/arctic-monkeys-e1661342211280.jpg?w=1200&h=675&crop=1)">
-            <%= ticket.artist %>
-            <%= ticket.event_date.strftime('%d/%m/%y') %>
-          </div>
+            <div class="artist"><%= ticket.artist %></div>
+            <div class="d-flex">
+              <div class="date">
+                <%= ticket.event_date.strftime('%d/%m/%y')%>
+              </div>
+              <div class="city">
+                <%= ticket.city %>
+              </div>
+            </div>
+        </div>
         <% end %>
       <% end %>
-    </div>
-
   </div>
 </div>
