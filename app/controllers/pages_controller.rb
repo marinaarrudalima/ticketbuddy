@@ -3,5 +3,10 @@ class PagesController < ApplicationController
 
   def home
     @tickets = Ticket.all
+
+    if params[:query].present?
+      sql_query = 'artist ILIKE ?'
+      @tickets = Ticket.where(sql_query, "%#{params[:query]}%")
+    end
   end
 end

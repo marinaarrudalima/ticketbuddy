@@ -1,7 +1,16 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroudhome.jpg' %>);">
   <div class="container justify-content-center">
     <h1>The safest way to buy and sell tickets</h1>
-    <input class="form form-control form-control-lg mt-3" type="text" placeholder="Search for an event or artist" aria-label=".form-control-lg example">
+    <div class="row justify-content-center">
+    <div class="col-sm-8 my-3">
+      <%= form_with url: tickets_path, method: :get, class: "d-flex" do %>
+        <%= text_field_tag :query,
+            params[:query],
+            class: "form-control custom-width",
+            placeholder: "Search for an artist"%>
+    <% end %>
+  </div>
+</div>
   </div>
 </div>
 
