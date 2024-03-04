@@ -9,7 +9,7 @@
     </div>
     <h2 class="card-trip-pricing">$<%= @ticket.price %></h2>
   </div>
-       <%= link_to "Back to your search", tickets_path %>
+       <%= link_to "Back to your search", :back %>
      <li class="list-group-item">
      <% if @ticket.pending? %>
       <%= link_to "Buy Ticket", ticket_orders_path(@ticket), data: {turbo_method: :post} %>
