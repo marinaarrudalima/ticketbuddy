@@ -11,9 +11,11 @@
   </div>
        <%= link_to "Back to your search", tickets_path %>
      <li class="list-group-item">
-      <%= form_with url: ticket_orders_path(@ticket), method: :post do |form| %>
-        <%= form.submit "Buy Ticket", class: "btn btn-primary" %>
-      <% end %>
+     <% if @ticket.pending? %>
+      <%= link_to "Buy Ticket", ticket_orders_path(@ticket), data: {turbo_method: :post} %>
+     <% else %>
+      <p>This Ticket is not available anymore</p>
+     <% end %>
     </li>
 </div>
 </div>

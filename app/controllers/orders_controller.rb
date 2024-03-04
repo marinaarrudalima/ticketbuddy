@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
     @order = Order.new
     @order.user = current_user
     @order.ticket = @ticket
+    @ticket.sold!
 
     if @order.save
       redirect_to orders_path
