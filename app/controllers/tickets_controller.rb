@@ -27,6 +27,20 @@ class TicketsController < ApplicationController
     redirect_to tickets_path(@ticket.user), status: :see_other
   end
 
+  def edit
+    @ticket = Ticket.find(params[:id])
+  end
+
+  def update
+    @ticket = Ticket.find(params[:id])
+    @ticket.user = current_user
+    if @ticket.update(tickets_params)
+      redirect_to tickets_path
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def tickets_params
