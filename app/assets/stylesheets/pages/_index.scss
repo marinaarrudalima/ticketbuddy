@@ -63,3 +63,26 @@ display: flex;
 align-content: top;
 justify-content: space-between;
 }
+.card-title {
+  background-color: #CCC29F;
+  outline-style: dashed;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+.card-ticket{
+  background-color: #C94D3F;
+  width: 20%;
+  display: flex;
+  color: white;
+  border-radius: 3px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.beatles {
+  width: 10%;
+  border-radius: 100%;
+}

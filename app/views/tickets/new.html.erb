@@ -1,10 +1,7 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-6">
-      <h4><br>
-        Sell your ticket safely with TicketBuddy! 🎟️</h4>
-      <br>
-      <div class=sellform>
+      <h4><br>Sell your tickets safely with TicketBuddy! 🎟️</h4><br>
       <%= simple_form_for @ticket do |f| %>
         <%= f.input :artist %>
         <%= f.input :ticket_type %>
@@ -12,6 +9,7 @@
         <%= f.input :city %>
         <%= f.input :event_date %>
         <%= f.submit "Upload your ticket here", class: "btn btn-secondary"%>
+        <%# Mudar codigo para foto, ao inves de submit usar input %>
         <%= f.submit "Submit", class: "btn btn-primary"%>
       <% end %>
     </div>
