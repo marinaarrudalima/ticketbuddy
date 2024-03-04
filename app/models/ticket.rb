@@ -2,7 +2,7 @@ class Ticket < ApplicationRecord
   include PgSearch::Model
 
   belongs_to :user
-  has_one :order
+  has_one :order, dependent: :destroy
 
   pg_search_scope :search_by_artist,
     against: [ :artist ],
