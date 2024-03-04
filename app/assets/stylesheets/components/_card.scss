@@ -2,15 +2,13 @@
   background-size: cover;
   background-position: center;
   height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 300px;
   color: white;
-  font-size: 24px;
-  font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .cards {
@@ -34,13 +32,13 @@
   }
 }
 
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 500px;
-  margin: auto;
-}
+// .card-trip {
+//   overflow: hidden;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   width: 500px;
+//   margin: auto;
+// }
 
 .card-trip > img {
   height: 500px;
@@ -48,30 +46,54 @@
   object-fit: cover;
 }
 
-.card-trip h2 {
-  font-size: 20px;
+// .card-trip h2 {
+//   font-size: 20px;
+//   font-weight: bold;
+//   margin: 0;
+// }
+
+// .card-trip p {
+//   font-size: 18px;
+//   opacity: .7;
+//   margin: 0;
+// }
+
+
+// .card-trip .card-trip-infos {
+//   padding: 16px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: flex-end;
+//   position: relative;
+// }
+
+// .card-trip-infos .card-trip-user {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }
+
+.artist {
+  font-size: x-large;
+  top: 10px;
+  left: 10px;
   font-weight: bold;
-  margin: 0;
+  align-items: start;
 }
 
-.card-trip p {
-  font-size: 18px;
-  opacity: .7;
-  margin: 0;
+.date {
+  align-items: end;
+  font-size: small;
+  bottom: 10px;
+  left: 10px;
+  // align-items: center;
 }
 
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
+.city {
+  align-items: end;
+  font-size: small;
+  bottom: 10px;
+  left: 10px;
+  // align-items: center;
 }
