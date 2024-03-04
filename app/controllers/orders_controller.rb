@@ -11,4 +11,10 @@ class OrdersController < ApplicationController
       render "tickets/show"
     end
   end
+
+  def destroy
+    @order = Order.find(params[:id])
+    @order.destroy
+    redirect_to orders_path
+  end
 end
