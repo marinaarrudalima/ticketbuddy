@@ -5,7 +5,7 @@
   </div>
 
 <div class="container justify-content-start">
-  <h3 class="header mt-5"><strong>My Selling Tickets</strong></h3>
+  <h3 class="header mt-3 mb-3"><strong>My selling tickets</strong></h3>
 </div>
 
 <div class="cards-container">
@@ -14,11 +14,20 @@
       <img src="<%= image_path ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>"/>
       <div class="card-product-infos">
         <h2><%= ticket.artist %></h2>
-        <p>The show takes place in <b><%= ticket.city %></b></p>
+        <p>The show takes place in <b><%= ticket.city %></b>
+        on <b> <%= ticket.event_date.strftime('%d/%m/%y') %></b></p>
+        <div class="d-flex justify-content-between mt-3">
         <h2>$ <%= ticket.price %></h2>
-        <%= link_to "Delete", ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-        <br>
-        <%= link_to "Edit", edit_ticket_path(ticket) %>
+          <div class="card-product-flex">
+          <%= link_to ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "gold-icon" do %>
+            <i class="fa-solid fa-trash"></i>
+          <% end %>
+          <br>
+          <%= link_to edit_ticket_path(ticket), class: "gold-icon" do %>
+            <i class="fa-solid fa-pen-to-square"></i>
+          <% end %>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
