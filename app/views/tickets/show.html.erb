@@ -20,7 +20,7 @@
       <% if @ticket.user == current_user %>
         <p>You cannot buy your own ticket</p>
       <% elsif @ticket.pending? %>
-        <%= link_to "Buy", ticket_orders_path(@ticket), data: {turbo_method: :post}, class: "btn btn-secondary success" %>
+        <%= link_to "Buy", ticket_orders_path(@ticket), data: {turbo_method: :post, turbo_confirm: "Are you sure you want to buy this ticket?"}, class: "btn btn-secondary success" %>
       <% else %>
        <p>This ticket is not available anymore</p>
       <% end %>

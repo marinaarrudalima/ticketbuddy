@@ -13,11 +13,10 @@ class OrdersController < ApplicationController
     @ticket.sold!
 
     if @order.save
-      redirect_to orders_path
+      redirect_to orders_path, notice: "Your ticket has been confirmed!"
     else
       render "tickets/show"
     end
-
   end
 
   # def destroy
