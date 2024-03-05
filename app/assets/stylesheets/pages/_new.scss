@@ -6,8 +6,7 @@ justify-content: center;
 
 .btn-primary {
 background-color: #c94e40;
-margin-top: 10px;
-margin-bottom: 10px;
+margin-top: 30px;
 border-radius: 10px;
 border:#c94e40;
 display: flex;
@@ -22,4 +21,12 @@ flex-direction: column;
 
 .sellform {
   width: 300%;
+}
+
+.formcard {
+  border: #ccc29f65;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 25px;
+  box-shadow: 3px 3px 3px #ccc29f65;
 }
