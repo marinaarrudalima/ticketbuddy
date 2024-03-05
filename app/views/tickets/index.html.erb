@@ -5,7 +5,7 @@
   </div>
 
 <div class="container justify-content-start">
-  <h3 class="header mt-3 mb-3"><strong>My selling tickets</strong></h3>
+  <h3 class="header mt-3 mb-3"><strong>My tickets</strong></h3>
 </div>
 
 <div class="cards-container">
@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-between mt-3">
         <h2>$ <%= ticket.price %></h2>
           <div class="card-product-flex">
-          <%= link_to ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "gold-icon" do %>
+          <%= link_to ticket, data: {turbo_method: :delete, turbo_confirm: "Are you sure you want to delete?"}, class: "gold-icon" do %>
             <i class="fa-solid fa-trash"></i>
           <% end %>
           <br>
