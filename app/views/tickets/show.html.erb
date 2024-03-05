@@ -11,11 +11,13 @@
   </div>
        <%= link_to "Back to your search", :back %>
      <li class="list-group-item">
-     <% if @ticket.pending? %>
-      <%= link_to "Buy Ticket", ticket_orders_path(@ticket), data: {turbo_method: :post} %>
-     <% else %>
-      <p>This Ticket is not available anymore</p>
-     <% end %>
+      <% if @ticket.user == current_user %>
+        <p>You cannot buy your own ticket</p>
+      <% elsif @ticket.pending? %>
+        <%= link_to "Buy Ticket", ticket_orders_path(@ticket), data: {turbo_method: :post} %>
+      <% else %>
+       <p>This Ticket is not available anymore</p>
+      <% end %>
     </li>
 </div>
 </div>
