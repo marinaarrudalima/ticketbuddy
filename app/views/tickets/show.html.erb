@@ -1,4 +1,3 @@
-<p style="color: green"><%= notice %></p>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroundhome.jpg' %>);">
   <div class="container justify-content-center">
     <h1>The safest way to buy and sell tickets</h1>
@@ -6,23 +5,26 @@
   </div>
 <div class="container">
 <div class="card-trip">
+  <h3><strong>Artist: </strong><%= @ticket.artist %></h3>
   <img src="<%= image_path @ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>" />
   <div class="card-trip-infos">
     <div>
-      <h2><%= @ticket.artist %></h2>
-      <p>The show will be held in <b><%= @ticket.city %></b></p>
+      <p><strong>City: </strong><%= @ticket.city %></b><br>
+      <strong>Date: </strong><%= @ticket.event_date.strftime('%d/%m/%y') %></p>
     </div>
     <h2 class="card-trip-pricing">$<%= @ticket.price %></h2>
   </div>
-       <%= link_to "Back to your search", :back %>
+  <div class="d-flex justify-content-between">
+  <%= link_to "Back", :back, class: "btn btn-outline-primary" %>
      <li class="list-group-item">
       <% if @ticket.user == current_user %>
         <p>You cannot buy your own ticket</p>
       <% elsif @ticket.pending? %>
-        <%= link_to "Buy Ticket", ticket_orders_path(@ticket), data: {turbo_method: :post} %>
+        <%= link_to "Buy", ticket_orders_path(@ticket), data: {turbo_method: :post}, class: "btn btn-secondary success" %>
       <% else %>
-       <p>This Ticket is not available anymore</p>
+       <p>This ticket is not available anymore</p>
       <% end %>
     </li>
+</div>
 </div>
 </div>
