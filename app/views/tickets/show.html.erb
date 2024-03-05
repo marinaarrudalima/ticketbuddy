@@ -1,4 +1,9 @@
 <p style="color: green"><%= notice %></p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroudhome.jpg' %>);">
+  <div class="container justify-content-center">
+    <h1>The safest way to buy and sell tickets</h1>
+  </div>
+  </div>
 <div class="container">
 <div class="card-trip">
   <img src="<%= image_path @ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>" />
