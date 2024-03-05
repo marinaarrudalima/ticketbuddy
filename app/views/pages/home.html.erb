@@ -2,17 +2,17 @@
   <div class="container justify-content-center">
     <h1>The safest way to buy and sell tickets</h1>
     <div class="row justify-content-center">
-    <div class="col-sm-8 my-3">
-      <%= form_with url: root_path, method: :get, class: "d-flex" do %>
-        <%= text_field_tag :query,
+      <div class="col-sm-8 my-3">
+        <%= form_with url: root_path, method: :get, class: "d-flex" do %>
+          <%= text_field_tag :query,
             params[:query],
             class: "form-control custom-width",
             placeholder: "Search for an artist"%>
-    <% end %>
+        <% end %>
+      </div>
+    </div>
   </div>
-</div>
   </div>
-</div>
 
 <div class="container justify-content-center">
   <h3 class="header mt-5"><strong>Trending now</strong></h3>
