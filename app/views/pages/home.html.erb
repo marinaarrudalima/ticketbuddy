@@ -22,7 +22,7 @@
       <% @tickets.each do |ticket| %>
         <%= link_to ticket_path(ticket), class: "navbar-brand" do %>
           <% if ticket.artist == 'Nx Zero' %>
-            <% img_background = 'nx_zero.jpeg' %>
+            <% img_background = 'nx_zero.jpg' %>
               <% elsif ticket.artist == 'Pink Floyd' %>
               <% img_background = 'pink_floyd.jpg' %>
               <% elsif ticket.artist == 'Beatles' %>
