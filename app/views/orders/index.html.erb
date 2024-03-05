@@ -1,19 +1,22 @@
-<h1><b>Purchase History</b>:</h1>
-<div class=row>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroudhome.jpg' %>);">
+  <div class="container justify-content-center">
+    <h1>The safest way to buy and sell tickets</h1>
+  </div>
+  </div>
+
+<div class="container justify-content-start">
+  <h3 class="header mt-5"><strong>Purchase History</strong></h3>
+</div>
+
+<div class="container">
   <% @orders.each do |order| %>
-  <div class="col-4">
-    <div class="card-trip">
+    <div class="card-product">
       <img src="<%= image_path order.ticket.artist.downcase.gsub(' ', '_') + '.jpg' %>"/>
-      <div class="card-trip-infos">
-        <div>
-          <h2><%= order.ticket.artist %></h2>
-          <p>The show will be held in <b><%= order.ticket.city %></b></p>
-        </div>
-        <h2 class="card-trip-pricing">$<%= order.ticket.price %></h2>
-        <%= link_to "Delete", order, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-        <br>
+      <div class="card-product-infos">
+        <h2><%= order.ticket.artist %></h2>
+        <p>The show takes place in <b><%= order.ticket.city %></b></p>
+        <h2>$ <%= order.ticket.price %></h2>
       </div>
-    </div>
     </div>
   <% end %>
 </div>
