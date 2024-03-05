@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroudhome.jpg' %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'backgroundhome.jpg' %>);">
   <div class="container justify-content-center">
     <h1>The safest way to buy and sell tickets</h1>
     <div class="row justify-content-center">
@@ -15,9 +15,10 @@
   </div>
 
 <div class="container justify-content-center">
-  <h3 class="header mt-5"><strong>Trending now</strong></h3>
+  <h3 class="header mt-5"><strong>Tickets available</strong></h3>
 
     <div class="cards">
+      <% if @tickets.any? %>
       <% @tickets.each do |ticket| %>
         <%= link_to ticket_path(ticket), class: "navbar-brand" do %>
           <% if ticket.artist == 'Nx Zero' %>
@@ -45,8 +46,11 @@
                 <%= ticket.city %>
               </div>
             </div>
-        </div>
+          </div>
         <% end %>
       <% end %>
+    <% else %>
+      <p class=message>Sorry! No tickets available at the moment &#x1F972;</p>
+    <% end %>
   </div>
 </div>
