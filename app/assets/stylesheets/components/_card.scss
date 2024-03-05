@@ -9,6 +9,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 20px;
   text-align: center;
+  position: relative;
 }
 
 .cards {
@@ -74,26 +75,27 @@
 //   width: 40px;
 // }
 
-.artist {
+.artist-card {
   font-size: x-large;
-  top: 10px;
-  left: 10px;
   font-weight: bold;
-  align-items: start;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.date {
+.meta-data-card {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
   align-items: end;
+  z-index: 500;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
   font-size: small;
   bottom: 10px;
   left: 10px;
-  // align-items: center;
-}
-
-.city {
-  align-items: end;
-  font-size: small;
-  bottom: 10px;
-  left: 10px;
-  // align-items: center;
 }
